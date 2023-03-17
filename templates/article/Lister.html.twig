@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+<h1>Liste des articles</h1>
+<table class="table-bordered">
+    <tr>
+        <th>Identifiant</th>
+        <th>Libellé</th>
+        <th>Quantité</th>
+        <th>Gammme</th>
+    </tr>
+    {% for tab in articles %}
+        <tr>
+        {% for value in tab %}
+            <td>{{value}}</td>
+        {% endfor %}
+    {% endfor %}
+        </tr>
+</table>
+{% endblock %}

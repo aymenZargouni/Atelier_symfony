@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+
+<a href="{{path('app_some',{'a': 5 , 'b': 17})}}">Somme</a>
+<br>
+<a href="{{path('app_soustraction',{'a': 5 , 'b': 17})}}">Soustraction</a>
+{% endblock %}
